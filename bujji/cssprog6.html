@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+	<head>
+	   <title>CSS</title>
+	   <link rel="stylesheet" type="text/css" href="mystyle1.css">
+	   <style type="text/css">
+	   	body{
+	   		background: url('images/bgimage1.jpg');
+	   		/*background-repeat: repeat-y;*/
+	   	}
+	   	.my-paragraph{
+	   		color:blue !important;
+	   	}
+	   	.paragraph1{
+	   		text-transform: uppercase;
+	   	}
+	   	.my-paragraph{
+	   		text-transform: lowercase;
+	   	}
+	   	.paragraph3{
+	   		color:green;
+	   		text-transform: capitalize;
+	   	}
+	   </style>
+	</head>
+	<body class="my-body">
+		<div class="div1">
+			<!-- inline css -->
+			<p style="color:red" class="paragraph1">
+				Underscore.js is a JavaScript library which provides utility functions for common programming tasks. It is comparable to features provided by Prototype.js and the Ruby language, but opts for a functional programming design instead of extending object prototypes.
+			</p>
+
+			<!-- internal css -->
+			<p class="my-paragraph" style="color:green;">
+				Underscore.js is a JavaScript library which provides utility functions for common programming tasks. It is comparable to features provided by Prototype.js and the Ruby language, but opts for a functional programming design instead of extending object prototypes.
+			</p>
+			<p class="paragraph3">
+				underscore.js is a javascript library which provides utility functions for common programming tasks. it is comparable to features provided by prototype.js and the ruby language, but opts for a functional programming design instead of extending object prototypes.
+			</p>
+		</div>
+	</body>
+</html>

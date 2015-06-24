@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+	<head>
+	   <title>CSS</title>
+	   <link rel="stylesheet" type="text/css" href="mystyle1.css">
+	   <style type="text/css">
+	   	body{
+	   		background: url('images/bgimage1.jpg');
+	   		/*background-repeat: repeat-y;*/
+	   	}
+	   	.mypara1{
+	   		color: green;
+	   	}
+	   	.mypara2{
+	   		text-align: center;
+	   		color:red;
+	   	}
+	   	.mypara3,
+	   	.mydiv{
+	   		text-align: right;
+	   		color: blue;
+	   	}
+	   	#mydiv2{
+	   		color:red;
+	   	}
+	   	
+	   #mydiv2 .subpara{
+	   	color:green;
+	   	font-size: 20px;
+	   }
+	   </style>
+	</head>
+	<body class="my-body">
+		<div class="div1">
+			<p class="mypara1">The beautiful, open source front-end SDK for developing hybrid mobile apps with HTML5.</p>
+			<p class="mypara2">The beautiful, open source front-end SDK for developing hybrid mobile apps with HTML5.</p>
+			<p class="mypara3">The beautiful, open source front-end SDK for developing hybrid mobile apps with HTML5.</p>
+			<div class="mydiv">
+				The beautiful, open source front-end SDK for developing hybrid mobile apps with HTML5.
+				<p class="subpara">this is sub paragraph</p>
+			</div>
+			<div id="mydiv2">
+				The beautiful, open source front-end SDK for developing hybrid mobile apps with HTML5.
+				<p class="subpara">this is sub paragraph</p>
+			</div>
+		</div>
+	</body>
+</html>
