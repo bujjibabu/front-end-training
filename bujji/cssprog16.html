@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.mydiv {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-animation: myfirst 15s; /* Chrome, Safari, Opera */
+    -moz-animation: myfirst 15s; /* mozilla */
+    -ms-animation: myfirst 15s; /* ie*/
+    animation: x 50s; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes x {
+    from {background: green;}
+    to {background: yellow;}
+}
+
+/* Standard syntax */
+@keyframes x {
+    from {background: green;}
+    to {background: yellow;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div class="mydiv"></div>
+
+</body>
+</html>

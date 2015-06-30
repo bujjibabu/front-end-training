@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.mydiv {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 30s; /* Chrome, Safari, Opera */
+    -moz-animation: myfirst 30s; /* mozilla */
+    -ms-animation: myfirst 30s; /* ie*/
+    animation: fisrtAnimation 45s; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fisrtAnimation {
+    0% {background: green; left:0px; top:0px;}
+    25% {background: yellow; left:300px; top:0px;}
+    50% {background: blue;left:300px;top:300px;}
+    75% {background: red;left:0px;top:300px;}
+    100% {background: black;left:0px;top:0px;}
+
+}
+
+
+/* Standard syntax */
+@keyframes fisrtAnimation {
+     0% {background: green; left:0px; top:0px;}
+    25% {background: yellow; left:300px; top:0px;}
+    50% {background: blue;left:300px;top:300px;}
+    75% {background: red;left:0px;top:300px;}
+    100% {background: black;left:0px;top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div class="mydiv"></div>
+
+</body>
+</html>
