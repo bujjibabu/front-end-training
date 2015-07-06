@@ -1,38 +1,36 @@
 .label-css {
-		width: 77px;
-		float: left;
-		}
-      .input-css{
-       	    
-       	 }
-       	.form-css {
-       		background-color: #A64DFF;
-       		width: 401px;
-       		margin-top: 7%;
-            margin-left: 38%;
-            padding-left: 46px;
-
-			
-       	}
-       	.button-css{
-       		width: 102px;
-		       float: left;
-       	}
-       	.dob-css{
-       		width: 103px;
-		float: left;
-       	}
-       	.name-css {
-				margin-left: 16%;
-					}
-		.Registration-css {
-				font-size: xx-large;
-				margin-left: 16%;
-
-					}
-		.sex-css {
-margin-left: 25%;
+	width: 77px;
+	float: left;
+ }
+.input-css{
+ 	    
+ 	 }
+.form-css {
+	background-color: #A64DFF;
+	width: 401px;
+	margin-top: 7%;
+      margin-left: 38%;
+      padding-left: 46px;
+}
+.button-css{
+	width: 102px;
+      float: left;
+}
+.dob-css{
+	width: 103px;
+      float: left;
+}
+.name-css {
+      margin-left: 16%;
+ }
+.Registration-css {
+	font-size: xx-large;
+	margin-left: 16%;
+}
+.sex-css {
+      margin-left: 25%;
 }
        	 
        	 .button-css {
 margin-left: 24%;
+}
