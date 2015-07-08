@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+    	body{
+    		background: #c0c0c0;
+    	}
+    	.mytable{
+    		background: #fff;
+    	}
+    	.mytable1{
+    		background: red;
+    	}
+    </style>
+</head>
+<body>
+	<div class="col-sm-offset-1 col-sm-10">
+		<p id="myPara0">Bujjibabu</p>
+		<p id="myPara1" name="x">Hello world</p>
+		<p id="myPara2">my paragraph2</p>
+		<p><b id="myPara3">my paragraph3</b></p>
+		<button class="btn btn-primary" onclick="add(1,4);">Add</button>
+		<button class="btn btn-primary" onclick="add(5,5);">Add</button>
+	</div>
+<script type="text/javascript">
+
+//var data = from java uaing ajax.
+
+//get the value
+var name = document.getElementById('myPara0').innerHTML;
+var name1 = document.getElementById('myPara0').innerText;
+
+console.log(name);
+console.log(name1);
+
+//set the value
+ document.getElementById('myPara1').innerHTML = 'updated value';
+ //document.getElementById('myPara2').innerHTML = '<b>Updated value</b>';
+ document.getElementById('myPara2').innerHTML = '<table class="table table-bordered mytable"><thead><tr><th>Hed1</th><th>Hed1</th><th>Hed1</th><th>Hed1</th><th>Hed1</th></tr></thead><tbody><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr></tbody></table>';
+ //document.write('hello world from js');
+ document.write("<table class='table table-bordered mytable1'><thead><tr><th>Hed1</th><th>Hed1</th><th>Hed1</th><th>Hed1</th><th>Hed1</th></tr></thead><tbody><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr><tr><td>td1</td><td>td1</td><td>td1</td><td>td1</td><td>td1</td></tr></tbody></table>");
+
+ var myName = "Bujji";
+ document.getElementById('myPara3').innerText = myName;
+ document.getElementById('myPara3').style.color = 'red'
+ document.getElementById('myPara3').style.fontSize = '30px';
+
+
+ function add(a,b){
+ 	var c = a+b;
+ 	return c;
+ };
+
+</script>
+</body>
+</html>
