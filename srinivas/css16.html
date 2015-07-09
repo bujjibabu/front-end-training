@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>border radius</title>
+	<style>
+		p.imag-css {
+		border:2px solid gray;
+		color:red;
+		border-radius: 25px;
+		border-collapse: 2px;
+		border-bottom-style:dotted;
+		border-top-right-radius: 50px;
+		border-top-style: solid;
+		border-image: url("images/border.png") 20 stretch;
+		padding: 10px;  
+		}
+		p.img1-css{
+		border:5px solid red;
+		padding: 17px;
+		border-image: url("images/border1.png") 10% stretch;
+		border-width: 10px;
+		-webkit-border-image: url("images/border1.png") 10% stretch; /* safari */
+		-o-border-image: url("images/border1.png") 10% stretch; /* opera */
+		/*border-image-repeat: repeat;*/
+		border-image-width: 10px
+		}
+	</style>
+</head>
+<body>
+		<p class="imag-css">Google is an American multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, and software.
+		</p>
+		<img src="images/border1.png" width="200px" height="200px">
+		<p class="img1-css">Google is an American multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, and software.
+		</p>
+
+
+</body>
+</html>
