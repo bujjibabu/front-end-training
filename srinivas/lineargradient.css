@@ -1,0 +1,44 @@
+.modi-css {
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		color:white;
+		font-size: 25px;
+		background:-webkit-linear-gradient(red,blue);
+		background:-o-linear-gradient(red,blue);
+		background:-moz-linear-gradient(red,blue);
+		background:linear-gradient(to right,red,blue);
+	}
+	.gandhi-css {
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		color:white;
+		font-size: 25px;
+		background:-webkit-linear-gradient(red,blue);
+		background:-o-linear-gradient(red,blue);
+		background:-moz-linear-gradient(red,blue);
+		background:linear-gradient(to right,red,blue);
+	}
+	.abdulkalam-css {
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		color:white;
+		font-size: 25px;
+		background:-webkit-linear-gradient(red,blue);
+		background:-o-linear-gradient(red,blue);
+		background:-moz-linear-gradient(red,blue);
+		background:linear-gradient(to right,red,blue);
+	}
+	.ysr-css {
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		color:white;
+		font-size: 25px;
+		background:-webkit-linear-gradient(red,blue);
+		background:-o-linear-gradient(red,blue);
+		background:-moz-linear-gradient(red,blue);
+		background:linear-gradient(to right,red,blue);
+	}
