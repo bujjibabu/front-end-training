@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word wrap and word break</title>
+	<style>
+	p:first-child {
+		 width: 200px;
+		 border:1px solid gray;
+		 text-overflow:ellipsis;
+		 
+
+	}
+	p:last-child{
+		width: 200px;
+		border:1px solid gray;
+		word-wrap:break-word;
+
+	}
+	p:nth-child(2){
+		width: 200px;
+		border:2px solid yellow;
+		word-break:keep-all;
+	}
+	p:nth-child(3){
+		width: 200px;
+		border:2px solid red;
+		word-break:break-all;
+	}
+	</style>
+</head>
+<body>
+	<p>Abraham Lincoln was the 16th President of the United States, serving from March 1861 until his assassination in April 
+	</p>
+	<p>Abraham Lincoln was the 16th President of the United States, serving from March 1861 until his assassination in April 
+	</p>
+	<p>Abraham Lincoln was the 16th President of the United States, serving from March 1861 until his assassination in April 
+	</p>
+
+	<p>Abraham Lincoln was the 16th President of the United States, serving from March 1861 until his assassination in April 
+	</p>
+</body>
+</html>
