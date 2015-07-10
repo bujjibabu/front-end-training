@@ -1,0 +1,68 @@
+p{
+	 		width: 100px;
+	 		height: 100px;
+	 		background-color: green;
+	 		-webkit-animation-duration:4s;
+	 		animation-name:srinu;
+	 		animation-duration:4s;
+	 	}
+	 	@-webkit-keyframes srinu {
+   			 from {background-color: red;}
+   			 to {background-color: yellow;}
+		}
+	 	/*@keyframe srinu{
+	 		from { background-color: red ;}
+	 		to {background-color: yellow;}
+
+	 	}*/
+	 	.p1-css{
+	 		width: 100px;
+	 		height: 100px;
+	 		background-color: red;
+	 		-webkit-animation-duration:5s;
+	 		animation-duration:4s;
+	 		animation-name:kalam;
+	 			}
+
+	 		@-webkit-keyframes kalam{
+	 			0% {background-color: red;}
+	 			30% {background-color: yellow;}
+	 			50% {background-color: green;}
+	 			70% {background-color: blue;}
+	 			90% {background-color: orange;}
+
+	 		}
+	 		.p2-css{
+	 		
+		    width: 100px;
+		    height: 100px;
+		    background-color: red;
+		    position: relative;
+		    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+		    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+		    -webkit-animation-delay:2s;
+		    animation-name: example;
+		    animation-duration: 4s;
+		    animation-delay:2s;/* delay to start */
+		    animation-iteration-count:infinite;/* 3 or 4 ..etc counts this specified times*/
+		    animation-direction:alternate;/* it can be reverse or alternate*/
+		    animation-timing-function:ease-in;/* linear normal startup and end , ease-in fast start,ease-out- stop fast...ease-in-out--fast in and out*/
+		}
+
+			
+			@-webkit-keyframes example {
+			    0%   {background-color:red; left:0px; top:0px;}
+			    25%  {background-color:yellow; left:200px; top:0px;}
+			    50%  {background-color:blue; left:200px; top:200px;}
+			    75%  {background-color:green; left:0px; top:200px;}
+			    100% {background-color:red; left:0px; top:0px;}
+			}
+
+			
+			@keyframes example {
+			    0%   {background-color:red; left:0px; top:0px;}
+			    25%  {background-color:yellow; left:200px; top:0px;}
+			    50%  {background-color:blue; left:200px; top:200px;}
+			    75%  {background-color:green; left:0px; top:200px;}
+			    100% {background-color:red; left:0px; top:0px;}
+			}
