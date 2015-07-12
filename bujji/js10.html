@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+  <div class="col-xs-12">
+    <button class="btn btn-primary" onclick="fnClick()">click</button>
+    <button class="btn btn-success" onmouseover="fnMouseover()">mouseover</button>
+    <button class="btn btn-danger" onmouseout="fnMouseout()">onmouseout</button>
+    <button class="btn btn-warning" onkeydown="fnKeydown()">onkeydown</button>
+  </div>
+  <script type="text/javascript">
+  /*-- =================== click function starting.======================= -- */
+    function fnClick(){
+      alert('click function');
+    }
+  /*-- ==================== click function ending ======================== --*/
+  /*-- =================== mouseover function starting.======================= -- */
+    function fnMouseover(){
+      alert('fnMouseover function');
+    }
+  /*-- ==================== mouseout function ending ======================== --*/
+  /*-- =================== mouseout function starting.======================= -- */
+    function fnMouseout(){
+      alert('fnMouseout function');
+    }
+  /*-- ==================== mouseover function ending ======================== --*/
+  /*-- =================== keydown function starting.======================= -- */
+    function fnKeydown(){
+      alert('fnKeydown function');
+    }
+  /*-- ==================== ke yownfunction ending ======================== --*/
+
+  //strings 
+
+  var x = "bujji's";
+  // alert(x.length); 
+
+  //single line comment
+
+  /* multiline 
+  comment */
+
+var y = 'Please find where find occures';
+var pos = y.indexOf('find');
+//alert(pos);
+
+
+var searchpos = y.search('find');
+//alert(searchpos);
+
+
+//slice
+var z = 'Apple, Banana, kiwi';
+//var res = z.slice(7,13);
+
+var res1 = z.slice(-12,-6);
+//alert(res1);
+
+//substring
+var substring = z.substring(7,13); // substring(A,B) A starting index, B ending ndex
+//alert(substring);
+
+// substr 
+
+var substr = z.substr(7,9); // substr(A,B) A->starting position B->length of extracted part.
+//alert(substr);
+
+   var mydate = "07/04/2015"; //mm/dd/yyyy month year july 2015
+
+var replaceString = 'This is innominds and innominds is software';
+//  var res = replaceString.replace('innominds' ,'TCS');
+  //alert(res);
+
+var fname = 'bujjibabu';
+var lname = 'balaga';
+var myname = fname + " " + lname;  //4+'7'+6
+
+//alert(myname);
+
+var FNAME = fname.toUpperCase();
+alert(FNAME);
+</script>
+</body>
+</html>

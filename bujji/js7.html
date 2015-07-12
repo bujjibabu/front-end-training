@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+	<div class="col-sm-offset-1 col-sm-10">
+    <p id="mypara">
+      <b>this is some data</b>
+    </p>
+
+    <p id="mypara1"></p>
+		<p id="mypara2"></p>
+
+    <input type="text" value="john" id="input1">
+    <button class="btn btn-danger" onclick="fnGetValue()">get</button>
+	</div>
+<script type="text/javascript">
+ var fname = "bujji"; 
+ var lname ="balaga";
+
+ var fname = 'bujji',laname="balaga";
+
+ var fname = 'bujji',
+     laname="balaga";
+
+
+var pragrapthtext = document.getElementById('mypara').innerHTML;
+console.log('pragrapthtext Inner text====>',pragrapthtext);
+      //or
+var pragrapthtext1 = document.getElementById('mypara').innerText;
+
+console.log('pragrapthtext1 html====>',pragrapthtext1);
+
+
+document.getElementById('mypara1').innerHTML = '<b>updating the paragraph text</b>' ;
+ // or
+document.getElementById('mypara2').innerText = '<b>updating the paragraph text</b>' ;
+
+var inputboxvalue= document.getElementById('input1').value;
+
+console.log('getting value :: ',inputboxvalue);
+
+ document.getElementById('input1').value = 'bujji';
+
+console.log('setting the value :: ',document.getElementById('input1').value);
+
+function fnGetValue(){
+  console.log('get the dynamic value ::', document.getElementById('input1').value);
+};
+
+</script>
+</body>
+</html>
