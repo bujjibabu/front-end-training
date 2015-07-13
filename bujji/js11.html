@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+  <div class="col-xs-12">
+
+  </div>
+  <script type="text/javascript">
+    var x = "hellow";
+    var myDate = new Date();
+    var day = myDate.getDate();
+    var month = myDate.getMonth()+1;
+    var year = myDate.getFullYear();
+
+
+    if(month<10){
+      month = '0'+month;
+    }
+    if(day<10){
+      day = '0'+day;
+    }
+
+    console.log('day============>',day);
+    console.log('month============>',month);
+    console.log('year============>',year);
+    //  display format MM/DD/YYYY
+    var custumDate =  month +'/'+ day +'/' + year;
+    console.log(custumDate);
+
+    console.log('random number ::', 100*Math.random()); // 0-1
+
+    var minnum = Math.min(10,5,4,2,-3,20);
+
+    console.log('minnum :: ', minnum);
+
+    var maxnum = Math.max(10,5,4,2,-3,20);
+
+    console.log('maxnum :: ', maxnum);
+
+
+    var someNum = 4.7;
+    console.log('4.7 rounding :: ', Math.round(someNum));
+
+    console.log('4.7 ceil :: ', Math.ceil(someNum));
+    console.log('4.7 floor :: ', Math.floor(someNum));
+
+
+  </script>
+</body>
+</html>
