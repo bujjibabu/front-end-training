@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="col-xs-12">
+    <h1 class="text-center text-uppercase">Tables</h1>
+  </div>
+  <script type="text/javascript">
+    //json
+    var myObj = {}; // empty obj
+    var myObj = {name:'bujji',phone:9533068603, zip:532459, area:'hyd'};
+    //or
+    var myObj1 = {"name":"bujji","zip":9532,"area":"hyd", "phone":9533068603};
+
+    var myObj2 = {
+      user:"bujji",
+      address:{houseno:123,area:'hyd'},
+      coutry:['india','U.S','U.K']
+    }
+  console.log('myObj2.address.area :: ', myObj2.address.area);
+  console.log('myObj2.address.area :: ', myObj2['address']['area']);
+  console.log('myObj2.coutry[1] :: ', myObj2.coutry[1])
+   console.log(myObj);
+   console.log(myObj1);
+    var myArray = [{name:'bujji',phone:9533068603, zip:532459, area:'hyd'},{"name":"bujji","zip":9532,"area":"hyd", "phone":9533068603}];
+    //var myArray1 = ['bujji',953306, 10.5, true];
+    console.log(myArray);
+  /*  myObj['status'] = 'single';
+    myObj.phone =7799475566;
+    var myArray = ['bujji','babu','raja'];
+    myArray[1];
+    console.log(myObj);*/
+   // console.log(myObj.area);
+    // var myArray  = [{name:'bujji',phone:9533068603, zip:532459, area:'hyd'},{name:'bujji1',phone:95330686031, zip:5324592, area:'viz'},{name:'bujji2',phone:95330683603, zip:5342459, area:'u.s'}];
+  </script>
+</body>
+</html> 

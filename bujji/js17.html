@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="col-xs-12">
+    <h1 class="text-center text-uppercase">Tables</h1>
+    <table id="testing" width="100%"></table>
+  </div>
+  <script type="text/javascript">
+var myArray = ['bujji','babu','rama','raja','john'];
+var arraylength= myArray.length;
+  var text = '';
+  for (var i=0; i<arraylength; i++){
+    text += "<tr><td>"+ myArray[i] +"</td></tr>";
+  }
+  document.getElementById('testing').innerHTML =text;
+  </script>
+</body>
+</html> 
