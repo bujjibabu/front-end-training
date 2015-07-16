@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Onload</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="onl" onload="onloadFucntion()">On Load Function</p>
+        <input id="onbl" type="text" onblur="onblurFunction()">
+        <input type="number" id="num" onfocus="onfocussFunction()">
+<!--        <input type="number" onfocusin="onfocusinFunction(this)">-->
+         <!--<input type="text" onfocusin="myFunction(this)">-->
+        <script>
+            function onloadFucntion(){
+                document.getElementById("onl").innerHTML="hello";
+            }
+            function onblurFunction(){
+               var v= document.getElementById("onbl").value;
+               if(v==110){
+                   alert(True);
+               } else {
+                   alert(false);
+               }
+            }
+            function onfocussFunction(){
+                var x=document.getElementById("num").value;
+                if(x>10 ||x<1){
+                    alert("Its not a number please enter a number");
+                }
+                else
+                {
+                    alert("you entered number");
+                }
+            }
+            
+         </script>   
+    </body>
+</html>
