@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <div>Home of the Microsoft ASP.NET development community. Download Visual 
+        Studio, post to the forums, read ASP.NET blogs and learn about ASP.NET.</div>
+    <p id="srinu">When we click on Functions it will change</p>
+    <p id="srinu1">When we click on Functions it will change</p>
+    <p id="time">Current time</p>
+    <!--document.write("all above data will be erased");-->
+    <button type="button" onclick="chanageContent()">Click here to Change </button>
+    <!--document.write("all above data will be erased");-->
+    <script>
+        function chanageContent() {
+            document.getElementById("srinu").style.fontSize="30px";
+            var name = document.getElementById("srinu").innerHTML = "srininvas reddy";
+            document.getElementById("srinu1").innerHTML = 5 + 19;
+//              document.write("Srininvas Reddy");
+            console.log(name);
+//            window.alert(name);
+
+            document.getElementById("time").innerHTML=new Date().getTime();
+            
+
+        }
+    </script>
+
+</html>
