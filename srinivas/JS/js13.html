@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> </title>
+    </head>
+    <body>
+        <script>
+            var name="srnivas,reddy,rajala";
+            document.write(name+"<br>");
+            document.write(name.slice(-13,-8)+"<br>");// the main difference is slice accepts -ve's ,whereas substring 
+           //  doesn't allow -ve's.
+            document.write(name.substring(0,7)+"<br>");
+            document.write(name.substr(5,10)+"<br>");
+            document.write(name.toUpperCase()+" Lower cases is: "+name.toLowerCase());
+            document.write(name.concat("Obula Reddy palli"+"<br>"));
+            document.write(name);
+            
+            var name1="Srinivas reddy Srinivas";
+            document.write(name1.search(/Srinivas/g));
+            var name2=name1.replace(/srinivas/m,"Microsoft");
+            document.write(name2);            
+            
+            
+        </script>
+    </body>
+</html>
