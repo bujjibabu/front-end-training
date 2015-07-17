@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<title>Dynamic Table Creation</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style type="text/css">
+	.myform{
+		  background: #c0c0c0;
+		  margin-top: 20px;
+		  padding: 10px 20px;
+	}
+</style>
+<body>
+<div class="col-xs-12">
+	<div class="col-xs-offset-4 col-xs-4 myform">
+		<div class="form-group">
+			<label>First Name</label>
+			<input class="form-control" type="text" placeholder="First Name" id="fname">
+		</div>
+		<div class="form-group">
+			<label>Last Name</label>
+			<input class="form-control" type="text" placeholder="Last Name" id="lname">
+		</div>
+		<div class="form-group">
+			<label>Email</label>
+			<input class="form-control" type="email" placeholder="Email" id="email">
+		</div>
+		<div class="form-group">
+			<label>Mobile</label>
+			<input class="form-control" type="number" placeholder="Mobile" id="mobile">
+		</div>
+		<div class="form-group">
+			<label>Password</label>
+			<input class="form-control" type="password" placeholder="Password" id="pwd">
+		</div>
+		<div class="form-group">
+			<label>Dob</label>
+			<input class="form-control" type="date" id="dob">
+		</div>
+		<button class="btn btn-success" onclick="fnSignUp()"> Sign up</button>
+	</div>
+</div>
+<script type="text/javascript">
+
+		//setTimeout(function(){ console.log("setTimeout"); }, 500);
+		setInterval(function(){ criscore(); }, 1000);
+		function criscore(){
+			console.log('taking score')
+
+		};
+
+
+	function fnSignUp(){
+		var myfname = document.getElementById('fname').value;
+		var mylname = document.getElementById('lname').value;
+		var myEmailId = document.getElementById('email').value;
+		var myMobile = document.getElementById('mobile').value;
+		var mypassword = document.getElementById('pwd').value;
+		var myDob = document.getElementById('dob').value;
+		var empObj = {firstname:myfname,lasname:mylname,email:myEmailId,mobile:myMobile,pwd:mypassword,dob:myDob};
+		console.log("My Employee Object :: ",empObj);
+		document.getElementById('fname').value ="";
+		document.getElementById('lname').value ="";
+		document.getElementById('email').value ="";
+		document.getElementById('mobile').value ="";
+		document.getElementById('pwd').value ="";
+		document.getElementById('dob').value ="";
+		
+
+		/*var obj = {"name" : "bujji", "mobile" :9533068603};
+		var array1 = ['buji','ravi','john'];*/
+		/*$.ajax({
+		  type: "POST",
+		  url: "server url",
+		  data: empObj
+		}).done(function( result ) {
+			var myown = result;
+		    alert( "Data Saved: " + result );
+		  }).fail(function(errormsg){
+		    alert( "Try agin: " + errormsg );
+		});
+		  $.ajax({
+			type: "POST",
+			  url: url,
+			  data: { name: "bujjiBabu", location: "hyderabad" },
+			  datatype:datatype,
+			  success: function(){
+			    alert('success');
+			  },
+			  error: function(){
+			   alert('error');
+			  }
+			});*/
+	}
+</script>
+</body>
+</html>

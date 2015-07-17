@@ -10,13 +10,16 @@
     <table id="testing" width="100%"></table>
   </div>
   <script type="text/javascript">
-var myArray = ['bujji','babu','rama','raja','john'];
-var arraylength= myArray.length;
-  var text = '';
-  for (var i=0; i<arraylength; i++){
-    text += "<tr><td>"+ myArray[i] +"</td></tr>";
-  }
-  document.getElementById('testing').innerHTML =text;
+  var myArray = [
+  {"name":"bujji","zip":9532111,"area":"hyd", "phone":9533068603},
+  {"name":"bujji","zip":953121,"area":"hyd", "phone":9533068603},
+  {"name":"bujji","zip":95321,"area":"hyd", "phone":9533068603}];
+  var arraylength= myArray.length;
+    var text = '';
+    for (var i=0; i<arraylength; i++){
+      text += "<tr><td>"+ myArray[i].name +"</td><td>"+myArray[i].zip+"</td></tr>";
+    }
+    document.getElementById('testing').innerHTML =text;
   </script>
 </body>
 </html> 
