@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table in Java Script</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .table-css {
+                /*background-color: red;*/
+                word-spacing: 10px;
+                           
+                
+            }
+            table{
+                border: 2px solid gray;
+                border-collapse: collapse;
+                 border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-css">
+            <h1>Displaying Tables in java Script</h1>
+            <table id="table11"></table>
+            <button type="button" onclick="onlcikFunction()">Click here to display tables dyanamically</button>
+        </div>
+        <script>
+            var name1=[
+                    {"fname":"Srinivas","lname":"Rajala","address":"New York", "zip":12601,"country":"USA"},
+                    {"fname":"Rami reddy","lname":"Rajala","address":"Fremont", "zip":534251,"country":"UK"},
+                    {"fname":"konda Reddy","lname":"palla","address":"Hyderbad", "zip":87883,"country":"AUS"},
+                    {"fname":"Ramana Reddy","lname":"duggireddy","address":"Canberra", "zip":20280,"country":"Canada"}
+                      ];
+                      var text='';
+                      var arraylength=name1.length;
+//                      document.write(arraylength);
+                      
+                  function onlcikFunction(){
+                      for(var i=0;i<arraylength;i++)
+                      {                         
+                          text += "<tr><td>"+ name1[i].fname+ "</td><td>"+ name1[i].zip+"</td></tr>";
+//                      }                   
+                      }                  
+                  document.getElementById("table11").innerHTML=text;
+              }
+     
+    </script>
+    </body>
+</html>
+            
+            
+            
+            
+            
+        
