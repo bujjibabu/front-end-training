@@ -13,14 +13,13 @@
         <p id="omu"></p>
         <p id="omout"></p>
         <p id="omenter"></p>
-        
         <button onclick="onclickFunction()">Onclick</button>
         <button ondblclick="ondblclickFunction()">OnDoubleclick</button>
         <button onmouseover="onmouseoverFunction()">OnMouse Over </button>
         <button onmousedown="onmouseDownFUnction()">On MOuse down</button>
         <button onmouseup="OnmouseupFunction()">On Mouse up</button>
         <button onmouseout="OnmouseOutFunction()">On Mouse Out</button>
-        <!--<p onmouseenter="onmouseEnterFuntion()">On MOuse eneter</p>-->
+        <p onmouseenter="onmouseEnterFuntion()">On MOuse eneter</p>
         <script>
             function onclickFunction(){
                 document.getElementById("ocl").innerHTML="Srinivas Reddy";
@@ -33,13 +32,19 @@
                 document.getElementById("omo").innerHTML="Obula Reddy palli";
             }
             function onmouseDownFUnction(){
+                alert('mouse down');
                 document.getElementById("omd").innerHTML="New York";
             }
             function OnmouseupFunction(){
+                alert('mouse up');
                 document.getElementById("omu").innerHTML="Poughkeepsie";
             }
             function OnmouseOutFunction(){
                 document.getElementById("omout").innerHTML="UI Training";
+            }
+
+            function onmouseEnterFuntion(){
+                alert('mouse enter');
             }
         </script>
     </body>

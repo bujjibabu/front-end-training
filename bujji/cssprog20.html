@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+    .box1,.box2,.box3,.box4{
+      height:300px;
+      width:300px;
+      background: red;
+      margin:10px;
+      float: left;
+    }
+
+
+
+
+    @media (max-width: 480px) {
+     .box1,.box2,.box3,.box4{
+            width:95%;
+            background: blue;
+            margin:10px;
+            float: left;
+          }
+    }
+     
+   @media (min-width: 768px) {
+    .box1,.box2,.box3,.box4{
+      width:45%;
+      background: green;
+      margin:10px;
+      float: left;
+    }
+  }
+     @media (min-width: 992px) {
+      
+      .box1,.box2,.box3,.box4{
+            width:23%;
+            background: red;
+            margin:10px;
+            float: left;
+          }
+
+    }
+    @media (min-width: 1200px) {
+      .form{
+        text-align: center;
+      }
+      
+    }
+    </style>
+</head>
+<body> 
+  <div class="myboxes">
+    <h3>Bootstrap input Boxes</h3>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>  
+    <div id="test"></div>  
+  </div>
+  <script type="text/javascript">
+    var data = "AngularJS is a JavaScript framework. angularJS is a efficient framework that can create Rich Internet Applications. AngularJS angularJS AngularJS";
+     var temp = data.replace(/AngularJS/ig,'BootstrapJs');
+      document.getElementById('test').innerHTML = "<b>"+temp+"</b>";
+      document.getElementById('test').style.color = "green";
+  </script>
+</body>
+</html>
