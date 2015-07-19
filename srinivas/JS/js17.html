@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h4>Java Script Object</h4>
+        <script>
+                    var sortnumber=[100,1,9,900,99,67,-90,-09,-0.09,20,30];
+                    document.write(sortnumber.sort()+"<br>");
+                    sortnumber.sort(function(x,y){
+                        return x-y; // Sorting the numbers 
+                    });
+                    document.write("Ascending<strong> order <i>is </i></strong>:" ,sortnumber+"<Br>");
+                    document.write("Descending<strong> order <i>is </i></strong>:",sortnumber.sort(function(a,b){ return b-a; }));
+                    // Descending Order 
+                    
+        </script>
+        <script>
+            var jsob={ FirstName:"srininvas",LastName:"Rajala",Address:"New York"};
+            var array=['srininvas',"reddy","new york","poughkeep",'north road'];
+            document.write(array+"<br>");
+            document.write(array.sort()+"<br>");
+            document.write(array.reverse()+"<br>");// both this  method are same i.e reverse and sort.reverse.
+            document.write(array.sort().reverse());    
+        </script>
+    </body>
+</html>

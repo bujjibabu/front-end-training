@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script Keyboard Even tags</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button id="kbu" onkeypress="OnkeyPressFucntion()">On Key Press</button>
+        <button id="kbd" onkeyup="onkeyupFunction()">On key up </button>
+        <button  id="kbp" onkeydown="onkeyworddoenFunction()">On keyword down</button>
+        
+        <script>
+            function onkeyworddoenFunction(){
+                document.getElementById("kbp").innerHTML="srininvas reddy";
+            }
+            function onkeyupFunction(){
+                alert("hello ! Welcoem to  UI");
+            }
+            
+            function OnkeyPressFucntion(){
+                document.getElementById("kbu").innerHTML="new york";
+            }
+            
+        </script>
+    </body>
+</html>

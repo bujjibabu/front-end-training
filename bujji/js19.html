@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<title>Dynamic Table Creation</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<body>
+<div class="col-xs-12">
+	<table class="table table-bordered" id="dynamicTable"></table>
+</div>
+<script type="text/javascript">
+	var myTableData = [
+	{employyename:"BujjiBabu",empid:123,empaddress:'Hyd',mobile:9533068603,sal:120000},
+	{employyename:"Srinivas",empid:234,empaddress:'U.S',mobile:7799476655,sal:150000},
+	{employyename:"sailaja",empid:345,empaddress:'U.K',mobile:256489124,sal:160000},
+	{employyename:"sai",empid:45,empaddress:'U.K',mobile:2564589124,sal:170000},
+	{employyename:"teja",empid:55,empaddress:'vizag',mobile:9587856458,sal:130000},
+	{employyename:"teja",empid:55,empaddress:'vizag',mobile:9587856458,sal:130000},
+	{employyename:"teja",empid:55,empaddress:'vizag',mobile:9587856458,sal:130000},
+	{employyename:"teja",empid:55,empaddress:'vizag',mobile:9587856458,sal:130000}
+	];
+ var myarraylength = myTableData.length;
+ var txt='<thead><tr><th class="text-uppercase">S.No</th><th class="text-uppercase">Employee Name</th><th class="text-uppercase">Emp Id</th><th class="text-uppercase">Address</th><th class="text-uppercase">Mobile</th><th class="text-uppercase">Sal</th></tr></thead>';
+ for(var i=0; i<myarraylength; i++){
+ 	txt +="<tr><td>"+(i+1)+"</td><td>"+myTableData[i].employyename+"</td><td>"+myTableData[i].empid+"</td><td>"+myTableData[i].empaddress+"</td><td>"+myTableData[i].mobile+"</td><td>"+myTableData[i].sal+"</td></tr>";
+ }
+ document.getElementById('dynamicTable').innerHTML = txt;
+</script>
+</body>
+</html>

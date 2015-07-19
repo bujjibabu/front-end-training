@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="col-xs-12">
+    <h1 class="text-center text-uppercase">Arrays</h1>
+  </div>
+  <script type="text/javascript">
+         var myArray = ['bujji','babu','rama','raja','john'];
+         var testArray = myArray;
+         console.log("sourceArray ::",myArray);
+
+         myArray[2]='raju';
+         console.log('after replacing :: ',myArray);
+
+         delete myArray[3];
+         console.log('after delete jaja element :: ',myArray);
+
+         // splice method 
+
+         myArray.splice(5, 0,'mohan','Rao');
+
+         console.log('after Splice Method :: ',myArray);
+
+         // splce method 
+          myArray.splice(4,1);
+          //after Splice Method ::  ["bujji", "babu", "raju", "Mohan", "Rao", 6: "john"]
+        console.log('after Splice Method :: ',myArray);
+        //after Splice Method ::  ["babu", "raju", "Mohan", "Rao", 6: "john"]
+        var sortingArray = testArray.sort();
+        console.log('after Sort Method :: ',testArray);
+        testArray.reverse();
+        console.log('after reverse Method :: ',testArray);
+
+        var myNumArray = [11,2,100,5,1];
+        myNumArray.sort();
+        console.log('after reverse Method :: ',myNumArray);
+
+        myNumArray.sort(function(a,b){return b-a});
+
+        //9 -89 6 10
+        console.log('after reverse Method :: ',myNumArray);
+       // myNumArray.reverse();
+        //console.log('after reverse Method :: ',myNumArray);
+
+  </script>
+</body>
+</html>

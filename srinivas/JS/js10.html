@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="mathra">Randomly generating number</p>
+        <button  type="button" onclick="randonFunction()">Click here to generate random numbers</button><br>
+        <script>
+            
+            function randonFunction(){
+            var x=9.999;
+//            document.write(x.NaN+""+x.toString()+"<br>"+x.toFixed()+"<br>");
+//           document.write(x.toPrecision(3));
+            document.getElementById("mathra").innerHTML=Math.random();
+            document.getElementById("mathra").innerHTML=Math.random().toPrecision(3);
+                      
+            }
+        </script>
+        <script>
+            document.write(Math.round(4.7));
+            document.write(Math.ceil(4.7));
+            document.write(Math.floor(4.7));
+            document.write(Math.min(20,-0,0,-8));
+//            document.write(new Date("july 10 2015"));
+            document.write(new Date().setDate(15));
+            var date=new Date();
+            var anotherdate=new Date();
+            document.write(date+"<br>");
+            document.write(anotherdate);
+            if(date >= anotherdate){
+                document.write("Good Morning");
+            } else
+            {
+                document.write("Good Evening");
+            }
+                
+        </script>
+    </body>
+</html>

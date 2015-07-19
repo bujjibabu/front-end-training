@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table in js</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+           <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+            <!-- Latest compiled and minified JavaScript -->
+       
+    </head>
+    <body>
+        <h1 class="page-header">Table in Java script </h1>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            var names=["srininvas,ramireddy,sriram,venkat"];
+
+            var salary=[98,90,75,60];
+//               var namesDummy='';
+            for(var i=0; i<names.length; i++)
+            {
+                var namesDummy='';
+
+                var namesDummy=namesDummy+"<theade><tr><td>"+names[i]+"</thead></tr></td>";
+                document.write("",namesDummy+"<br>");
+            }
+//               document.write(namesDummy);
+            for(var j=0;j<salary.length;j++){
+                var salaryDummy='';
+                salaryDummy=salaryDummy+"<thead><tr><td>"+salary[j]+"</thead></tr></td><b>";
+                document.write("Center is ",salaryDummy);                
+            }
+
+        </script>
+    </body>
+</html>
