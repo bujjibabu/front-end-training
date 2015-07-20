@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   -->
+        
+
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <h1>Hello WElcome to JQUERY </h1>
+        <p>Welcome to Jquery </p>
+        <p class="css"> Jquery Elemetns </p>
+        <p id="idcss">Jquery Elsment Two </p>
+        <button type="button">Click On Button to hide all p Html Elements</Button>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("div").click(function(){
+                    $("div").hide();
+                }); 
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").hide();                    
+                });               
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#idcss").show() ;                   
+                });               
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $(".css").hide();                    
+                });               
+            });
+        </script>
+    </body>
+</html>

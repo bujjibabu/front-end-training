@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Difference between remove and empty </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .para1-css,.para2-css {
+                border: 2px solid red;
+                background-color: yellow;
+                font-size: 20px;
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="para1-css">oop through the “me” object and print each value to the console without assuming you know the keys. 
+            Extra bonus: print each color in a separate console.log() without assuming you know the key of “fcolors” 
+            (detect the array, and handle printing the values of the  array.</p>
+         <p class="para2-css">oop through the “me” object and print each value to the console without assuming you know the keys. 
+            Extra bonus: print each color in a separate console.log() without assuming you know the key of “fcolors” 
+            (detect the array, and handle printing the values of the  array.</p>
+         <button class="button1">Remove</button>
+         <button class="button2">Empty</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        <script>
+            $(document).ready(function(){
+                $(".button1").mouseover(function(){
+                    $(".para1-css").remove();
+                });
+                $(".button2").click(function(){
+                    $(".para2-css").empty();
+                    
+                });
+            });
+        </script>
+    </body>
+</html>
