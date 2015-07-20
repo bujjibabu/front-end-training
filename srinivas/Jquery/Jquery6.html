@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Call back and Chaining</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <p>Heading One</p>
+        <button>Button</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                $("p").hide("slow",function(){
+                    alert("hello welcome to call back function");
+                });
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+               $("button").click(function(){
+                   $("p").css("color","blue").css("text-align","center");
+               } );
+                
+            });
+        </script>
+    </body>
+</html>
