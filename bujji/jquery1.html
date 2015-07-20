@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="col-xs-12">
+    <h1 class="text-center">jQuery</h1>
+    <p class="my-para">Underscore.js is a JavaScript library which provides utility functions for common programming tasks. It is comparable to features provided by Prototype.js and the Ruby language, but opts for a functional programming design instead of extending object prototypes.</p>
+  </div>
+  <div class="col-xs-12">
+    <button class="btn btn-primary hide-btn">Hide</button>
+    <button class="btn btn-success show-btn">Show</button>
+    <button class="btn btn-danger toggle-btn">Toggle</button>
+  </div>
+  
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+   /* $(document).ready(function(){
+       $('.my-para').hide();
+       //stuff
+    });
+     */
+     $(function(){
+      //hide
+        $('.hide-btn').click(function(){
+          $('.my-para').hide();
+        })
+      //show functionality
+       $('.show-btn').click(function(){
+          $('.my-para').show();
+        })
+      //toggle functionality
+       $('.toggle-btn').click(function(){
+          $('.my-para').toggle();
+        })
+       //code..
+     })
+      //document.getElementByClassName('my-para').style.display='none';
+
+//jQuery Selecters
+ // classname.
+ // id.
+ // element
+
+
+    </script>
+</body>
+</html> 

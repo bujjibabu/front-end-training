@@ -1,0 +1,16 @@
+jQuery 
+
+* jquery is light weight.
+* write less and do more.
+* many lines of js code we can write in single line method.
+* ajax calls  very easy.
+* DOM manuplution easy.
+* CSS manuplution easy.
+* event handling easy. (click, double click,moushover etc..)
+* Animations are easy.
+* works for all browers.
+
+compressed (min.js 0r production version).
+uncompressed (.js development version)
+ 
+
