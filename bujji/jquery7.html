@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery</h1>
+     <p>
+        Innominds architects enterprise applications with large data sets and complex workflows. We are also behind MVPs tied to emerging technologies. Our commitment spans the product life cycle from concept to roll-out to evolution. We continue to provide end-client steady state support to ensure that, at the end of the day, the product delivers like you promised.
+
+        Innominds architects enterprise applications with large data sets and complex workflows. We are also behind MVPs tied to emerging technologies. Our commitment spans the product life cycle from concept to roll-out to evolution. We continue to provide end-client steady state support to ensure that, at the end of the day, the product delivers like you promised.
+
+        Innominds architects enterprise applications with large data sets and complex workflows. We are also behind MVPs tied to emerging technologies. Our commitment spans the product life cycle from concept to roll-out to evolution. We continue to provide end-client steady state support to ensure that, at the end of the day, the product delivers like you promised.
+
+        Innominds architects enterprise applications with large data sets and complex workflows. We are also behind MVPs tied to emerging technologies. Our commitment spans the product life cycle from concept to roll-out to evolution. We continue to provide end-client steady state support to ensure that, at the end of the day, the product delivers like you promised.
+     </p>
+     <button class="btn btn-success my-hide-btn">hide</button>
+     <button class="btn btn-danger my-show-btn">show</button>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+        $('.my-hide-btn').click(function(){
+            $('p').hide('slow', function(){alert('hide success')});
+            // hide(speed, callback)
+        });
+
+        $('.my-show-btn').click(function(){
+            $('p').show('fast', function(){alert('show success')});
+            // hide(speed, callback)
+        });
+
+     });
+    </script>
+</body>
+</html> 

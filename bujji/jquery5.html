@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery</h1>
+     <ul class="ul1">
+        <li>List Item11</li>
+        <li>List Item12</li>
+        <li>List Item13</li>
+        <li>List Item14</li>
+        <li>List Item15</li>
+     </ul>
+     <ul class="ul2">
+        <li>List Item21</li>
+        <li>List Item22</li>
+        <li>List Item23</li>
+        <li>List Item24</li>
+        <li>List Item25</li>
+     </ul>
+     <ul class="ul3">
+        <li>List Item31</li>
+        <li>List Item32</li>
+        <li>List Item33</li>
+        <li>List Item34</li>
+        <li>List Item35</li>
+     </ul>
+     <button class="btn btn-sucess my-first">:first</button>
+     <button class="btn btn-danger my-first-child">:first-child</button>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+        $('.my-first').click(function(){
+          $('ul li:first').css('color','red');
+           $('ul li:even').css({'color':'blue'});
+            $('ul li:odd').css({'color':'yellow'});
+
+        });
+        $('.my-first-child').click(function(){
+          $('ul li:first-child').css('color','blue');
+        })
+     });
+    </script>
+</body>
+</html> 
