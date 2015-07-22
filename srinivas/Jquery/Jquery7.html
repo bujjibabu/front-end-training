@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>text</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+
+    </head>
+    <body>
+        <p id="zzzz">Show text or html</p>
+        <button id="xxxx">Button One@text</button>
+        <button id="yyyy">Button two html</button>
+        <button id="bbbb"> Values </button>
+        <input type="text" id="iiii"   value="srininvas reddy">
+        <script>
+                $(document).ready(function(){
+                    $("#xxxx").click(function(){
+//                        alert("text is "+ $("#zzzz").text());
+                            $("#zzzz").text();
+
+                    });
+                    $("#yyyy").click(function(){
+                        alert("html is "+$("#zzzz").html());
+                        
+                    });
+                });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#bbbb").dblclick(function(){
+                   console.log("value is "+$("#iiii").val());
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fade<title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        
+    </head>
+    <body>
+        
+<!--        <p>Hellow</p>-->
+        
+        <div id="div1" style="width:100px; height:100px; display: none; background-color: red">One</div><br>
+        <div id="div2" style="width:100px; height:100px; display: none; background-color: green">Two</div> <br>
+        <div id="div3" style="width:100px; height:100px; display: none; background-color: blue">Three</div><br>
+        <div id="div4" style="width:100px; height:100px; display: none; background-color: yellow">Four</div><br>
+        
+        <button>Toggle</button>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").toggle(01);
+                    
+                });
+            });
+         </script>
+            <script>
+             $(document).ready(function(){
+                $("button").click(function(){
+                    ("#div1").fadeIn();
+                    ("#div2").fadeIn("slow");
+                    ("#div3").fadeIn("fast");
+                    ("#div3").fadeIn(1000);
+                });
+             });
+             
+         </script>
+         
+        
+    </body>
+</html>
