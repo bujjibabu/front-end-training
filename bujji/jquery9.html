@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .mydiv{
+            width:100%;
+            background: red;
+            font-size: 20px;
+            color:#fff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery Slide</h1>
+     <div class="mydiv col-xs-12">
+      Built on top of the popular AngularJS framework from Google, Ionic utilizes AngularJS to provide the application structure, while Ionic itself focuses on the user interface. In other words, we see a match between the power of Angular and the beauty of Ionic UI.
+      Ionic provides a set of Angular directives (custom HTML elements) for it’s own components, making it as easy to use the widgets as writing a line of HTML code. In addition to directives, Ionic uses Angular’s touch recognizers, view animation logic, HTML sanitation, and asynchronous communication.
+      Built on top of the popular AngularJS framework from Google, Ionic utilizes AngularJS to provide the application structure, while Ionic itself focuses on the user interface. In other words, we see a match between the power of Angular and the beauty of Ionic UI.
+      Ionic provides a set of Angular directives (custom HTML elements) for it’s own components, making it as easy to use the widgets as writing a line of HTML code. In addition to directives, Ionic uses Angular’s touch recognizers, view animation logic, HTML sanitation, and asynchronous communication.
+      Built on top of the popular AngularJS framework from Google, Ionic utilizes AngularJS to provide the application structure, while Ionic itself focuses on the user interface. In other words, we see a match between the power of Angular and the beauty of Ionic UI.
+      Ionic provides a set of Angular directives (custom HTML elements) for it’s own components, making it as easy to use the widgets as writing a line of HTML code. In addition to directives, Ionic uses Angular’s touch recognizers, view animation logic, HTML sanitation, and asynchronous communication.
+     </div>
+     <br>
+     <button class="btn btn-success my-slideup-btn">slideup</button>
+     <button class="btn btn-warning my-slidedown-btn">slideDown</button>
+     <button class="btn btn-danger my-slidetoggle-btn">slideToggle</button>
+     <!-- <button class="btn btn-primary my-fadeto-btn">fadeTo</button> -->
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+        //slide up
+       $('.my-slideup-btn').click(function(){
+        $('.mydiv').slideUp(3000); //fadeIn(speed,callback)
+       });
+
+       //slide down
+      $('.my-slidedown-btn').click(function(){
+        $('.mydiv').slideDown(3000); //fadeOut(speed,callback)
+       });
+
+        //slide toggle
+      $('.my-slidetoggle-btn').click(function(){
+        $('.mydiv').slideToggle(3000,function(){$('.mydiv').slideToggle(3000)}); //fadeToggle(speed,callback)
+       })
+     });
+    </script>
+</body>
+</html> 

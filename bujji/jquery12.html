@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .mydiv{
+            width:200px;
+            background: red;
+            font-size: 14px;
+            color:#fff;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery DOM</h1>
+     <div class="mydiv col-xs-12 clearfix">
+        <b>Built on top of the popular AngularJS framework from Google, Ionic utilizes AngularJS to provide the. </b>
+     </div>
+     <div class="col-xs-12 form-group">
+        <label>UserName</label>
+        <input type="text" placeholder="Username" class="uname form-control">
+     </div>
+     <div class="col-xs-12">
+      <button class="btn btn-success my-get-btn">Get</button> 
+      <button class="btn btn-warning my-set-btn">SetHtml</button>
+      <button class="btn btn-danger my-settxt-btn">Settext</button>
+      <button class="btn btn-primary my-setvalue-btn">SetValue</button>
+      <button class="btn btn-primary my-getvalue-btn">GetValue</button>
+     </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+
+       //get the html and text
+        $('.my-get-btn').click(function(){
+          var getElement = $('.mydiv').html();
+          var getText = $('.mydiv').text();
+          console.log('get Html ============>',getElement);
+          console.log('get Text ============>',getText);
+        });
+
+         //set the html
+        $('.my-set-btn').click(function(){
+           $('.mydiv').html('<p> <u>Build HTML5 create interactive mobile apps with Bootstrap3 and Angular JS </u> </p>');
+        });
+
+      //set text
+        $('.my-settxt-btn').click(function(){
+           $('.mydiv').text('Build HTML5 create interactive mobile apps with Bootstrap3 and Angular JS');
+        });
+
+        //set value
+        $('.my-setvalue-btn').click(function(){
+           $('.uname').val('BujjiBabu');
+        });
+
+         //set value
+        $('.my-getvalue-btn').click(function(){
+          alert($('.uname').val());
+        });
+
+
+     });
+    </script>
+</body>
+</html> 
