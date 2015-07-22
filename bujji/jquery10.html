@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .mydiv,.mydiv1{
+            width:200px;
+            background: red;
+            font-size: 20px;
+            color:#fff;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery Slide</h1>
+     <div class="mydiv col-xs-12 clearfix">
+        Built on top of the popular AngularJS framework from Google, Ionic utilizes AngularJS to provide the 
+      </div>
+      <div class="mydiv1 col-xs-12 clearfix">
+        Built on top of the popular AngularJS framework from Google, Ionic utilizes AngularJS to provide the 
+      </div>
+     <br>
+     <div class="col-xs-12">
+      <button class="btn btn-success my-animate-btn">Animate</button>
+      <button class="btn btn-warning my-animate1-btn">Animate</button>
+      <button class="btn btn-danger my-animate2-btn">Animate</button>
+     </div>
+
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+        //Animate
+       $('.my-animate-btn').click(function(){
+        $('.mydiv').animate({left:"400px"},4000,function(){$('.mydiv').animate({left:"0px"},4000)}); //animate({parmas},speed,callback)
+       });
+        $('.my-animate1-btn').click(function(){
+        $('.mydiv1').animate({top:"300px",opacity:'0.5',width:'300px'}); //animate({parmas},speed,callback)
+       });
+
+      $('.my-animate2-btn').click(function(){
+        $('.mydiv1').animate({height:'toggle'}); //animate({parmas},speed,callback)
+       });
+     });
+    </script>
+</body>
+</html> 

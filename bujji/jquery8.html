@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .mydiv{
+            height:100px;
+            width:100px;
+            background: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery</h1>
+     <div class="mydiv"></div>
+     <br>
+     <button class="btn btn-success my-fadein-btn">fadeIn</button>
+     <button class="btn btn-warning my-fadeout-btn">fadeOut</button>
+     <button class="btn btn-danger my-fadetoggle-btn">fadeToggle</button>
+     <button class="btn btn-primary my-fadeto-btn">fadeTo</button>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+        //fade In
+       $('.my-fadein-btn').click(function(){
+        $('.mydiv').fadeIn(5000); //fadeIn(speed,callback)
+       });
+
+       //fade out 
+      $('.my-fadeout-btn').click(function(){
+        $('.mydiv').fadeOut(5000); //fadeOut(speed,callback)
+       });
+
+        //fade toggle
+      $('.my-fadetoggle-btn').click(function(){
+        $('.mydiv').fadeToggle(5000); //fadeToggle(speed,callback)
+       })
+       
+     //fade to
+     $('.my-fadeto-btn').click(function(){
+        $('.mydiv').fadeTo(3000,0.1,function(){alert('fadeTo')});  //fadeToggle(speed, opacity, callback)
+      });
+
+     });
+    </script>
+</body>
+</html> 
