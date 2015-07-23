@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .mydiv{
+            width:200px;
+            background: red;
+            font-size: 14px;
+            color:#fff;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery Add Elements</h1>
+     <div class="col-xs-12">
+      <ul class="list-unstyled myul">
+        <li>list Item1</li>
+        <li>list Item2</li>
+        <li>list Item3</li>
+        <li>list Item4</li>
+        <li>list Item5</li>
+      </ul>
+      <button class="btn btn-danger my-append-btn">append</button>
+      <button class="btn btn-warning my-prepend-btn">prepend</button>
+      <button class="btn btn-primary my-after-btn">after</button>
+      <button class="btn btn-primary my-before-btn">before</button>
+     </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+      var count = 5;
+      $('.my-append-btn').click(function(){
+        count++;
+        $('.myul').append('<li>list Item '+count+'</li>');
+      });
+
+     var count=1;
+      $('.my-prepend-btn').click(function(){
+        count--;
+        $('.myul').prepend('<li>list Item '+count+'</li>');
+      });
+
+    $('.my-after-btn').click(function(){
+            $('.myul').after('<li>list Item</li>');
+      });
+
+    $('.my-before-btn').click(function(){
+            $('.myul').before('<li>list Item</li>');
+      });
+
+     });
+    </script>
+</body>
+</html> 
