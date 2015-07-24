@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a class="hrefclas">Google</a>
+        <button class="buttonclass">Button</button>
+        <img class="image">
+        <button class="buttonimage">Button Image</button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        <script>
+            $(document).ready(function(){
+                $(".buttonclass").on('click',function(){
+                    $(".hrefclas").attr('href','https://www.facebook.com');
+                });
+                $(".buttonimage").on('click',function(){
+                    $(".image").attr('src','E:\front-end-training\srinivas\images/garden.jpg');
+                    $(".image").attr("height","200px");
+                    $(".image").attr("width","100px");
+                });
+                
+                
+            });
+        </script>
+    </body>
+</html>

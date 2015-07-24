@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Active </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .my-memu li {
+                
+                display: inline-block;
+                font-size: 20px;
+                padding: 4px 20px;
+                background-color:black;
+                
+                
+            }
+            .my-memu{
+                margin-left: 700px;
+            }
+            
+            .my-memu li:hover{
+                cursor: pointer;
+                border-bottom: 5px solid red;
+            }
+            .list11{
+               cursor: pointer;
+                border-bottom: 5px solid red;
+            }
+            .home, .menu, .contactus{
+                display: none;
+            }
+       
+            
+        </style>
+    </head>
+    <body>
+     
+    <div>
+             <ul class="my-memu">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#menu1">menu1</a></li>
+                 <li><a href="#contact">contact</a></li>              
+                 
+            </ul>
+     <div>
+            <div class="home" id="home">
+                <h1>Home</h1>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+            </div>
+            <div class="menu" id="menu1">
+                <h1>Menu</h1>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+            </div>
+            <div class="contactus" id="contact">
+                <h1>Contact US</h1>
+               <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+                <p> Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test Click on the "Try it yourself" button to see how it works. 
+                    jQuery Examples. Learn by examples! At W3Schools you will 
+                    find a lot of jQuery examples to edit and test
+                </p>
+            </div>
+        
+            
+        </div>
+ 
+    </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+         <script>
+             
+             $("document").ready(function(){
+                 $(".my-memu li").click(function(){
+                     $(".my-memu li").removeClass("list11");
+                     $(this).addClass("list11");
+//                     switch($(".list11").text()){
+//                         case "Home" :
+//                             $(".home").css({"display":"block"});
+//                             $(".menu").css({"display":"none"});
+//                             $(".contactus").css({"display":"none"});                            
+//                             break;
+//                             
+//                         case "menu1" :
+//                             $(".home").css({"display":"none"});
+//                             $(".menu").css({"display":"block"});
+//                             $(".contactus").css({"display":"none"});
+//                             break;
+//                             
+//                        case "contact" :
+//                             $(".home").css({"display":"none"});
+//                             $(".menu").css({"display":"none"});
+//                             $(".contactus").css({"display":"block"});
+//                             break;
+                        switch($(".list11").text()){
+                         case "Home" :
+                             $(".home").show();
+                             $(".menu").hide();
+                             $(".contactus").hide();                            
+                             break;
+                             
+                         case "menu1" :
+                             $(".home").hide();
+                             $(".menu").show();
+                             $(".contactus").hide();                            
+                             break;
+                             
+                        case "contact" :
+                              $(".home").hide();
+                             $(".menu").hide();
+                             $(".contactus").show();                            
+                             break;
+                     }
+                 });
+             });
+         </script>
+       
+    </body>
+</html>

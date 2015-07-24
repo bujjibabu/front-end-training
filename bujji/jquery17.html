@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="col-xs-12">
+     <h1>jQuery Add ajax</h1>
+     <button class="btn btn-default get-data-btn">get Data</button>
+     </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+     $(function(){
+      //$('.get-data-btn').click(function(){
+         /* $.ajax({
+            dataType: "json",
+            url: 'data/mydata1.json',
+            success: function(res){
+                console.log(res)
+            },
+            error:function(){
+              alert('fail');
+            }
+          });*/
+      var mydata = null;
+        $.ajax({
+            url: "data/mydata.json",
+            context: document.body
+          }).done(function(myres) {
+            console.log(myres);
+            mydata = myres;
+           // alert("success");
+          }).fail(function(){
+            alert('fail');
+          });
+
+          console.log(mydata)
+     // });
+     });
+    </script>
+</body>
+</html> 

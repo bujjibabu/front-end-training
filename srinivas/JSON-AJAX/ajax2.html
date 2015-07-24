@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <button class="button1">Button</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        <script>
+         $(document).ready(function(){
+             $("button1").click(function(){
+                 var dummy=null;
+                 $.ajax({
+                     url:"Demojson.json",
+                     context:document.body
+                 }).done(function(result){
+                     dummy=result;
+                     alert("success");
+                 }).fail(function(){
+                     alert("fail");
+                 });
+                 console.log(dummy);
+                     
+                });
+         });
+         
+         </script>
+
+    </body>
+</html>
