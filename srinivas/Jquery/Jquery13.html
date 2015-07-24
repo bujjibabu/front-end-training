@@ -8,13 +8,21 @@
     <body>
         <a class="hrefclas">Google</a>
         <button class="buttonclass">Button</button>
+        <img class="image">
+        <button class="buttonimage">Button Image</button>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
         <script>
             $(document).ready(function(){
-                $(".buttonclass").bind(click,function(){
-                    $(".hrefclas").attr('href''https://www.facebook.com//');
+                $(".buttonclass").on('click',function(){
+                    $(".hrefclas").attr('href','https://www.facebook.com');
                 });
-                $
+                $(".buttonimage").on('click',function(){
+                    $(".image").attr('src','E:\front-end-training\srinivas\images/garden.jpg');
+                    $(".image").attr("height","200px");
+                    $(".image").attr("width","100px");
+                });
+                
+                
             });
         </script>
     </body>
