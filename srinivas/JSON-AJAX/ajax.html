@@ -9,13 +9,12 @@
         <div>TODO write content</div>
         <button id="button">Button</button>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-        <script>
+        <script type="text/javascript">
             $(document).ready(function(){
                 $("#button").click(function(){
                     $.ajax({
-                        dataType:"json",
-                        url:"JSON/Demojson.json",
-                        success:function(){
+                        url:"Demojson.json",
+                        success:function(data){
                             alert("success");
                         },
                         error:function(){
@@ -23,9 +22,7 @@
                         }
                     });
                 });
-                
             });
-            
-                   </script>
+        </script>
     </body>
 </html>

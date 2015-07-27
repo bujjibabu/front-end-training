@@ -11,19 +11,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
         <script>
          $(document).ready(function(){
-             $("button1").click(function(){
+             $(".button1").click(function(){
                  var dummy=null;
                  $.ajax({
                      url:"Demojson.json",
                      context:document.body
                  }).done(function(result){
                      dummy=result;
+                     console.log(dummy);
                      alert("success");
                  }).fail(function(){
                      alert("fail");
                  });
-                 console.log(dummy);
-                     
                 });
          });
          

@@ -1,0 +1,22 @@
+Angularjs :
+
+1. angularjs Javacript framework.
+2. Create RIA.
+3. client side MVC(MVW).
+4. crossbower complaint.
+5. supported for web and mobile.
+6. opensource completely free.
+7. largescale apps.
+8. high performance and easy to maintain.
+9. SPA.
+
+
+Core features :
+ 1. Databinding (2way binding).
+ 2. 
+
+ HTML -------------------------> js
+ form
+ input bujji                 var userObj = {uname:bujji,password:demo}
+ input  demo
+ submit 

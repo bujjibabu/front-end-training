@@ -9,7 +9,7 @@
             "zip":12601,
             "contact number":0987654
         },
-                {
+        {
             "firstname":"rajala",
             "lastname":"reddy",
             "middlename":"srininvas",
@@ -19,9 +19,8 @@
             "state":"new york",
             "zip":12601,
             "contact number":0987654
-        },
-               
-          {
+        },     
+        {
             "firstname":"rajala",
             "lastname":"reddy",
             "middlename":"srininvas",
