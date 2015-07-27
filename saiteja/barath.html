@@ -1,0 +1,140 @@
+<!doctype html>
+<html data-ng-app="">
+<head>
+<title>table</title>
+<link rel="stylesheet" type="text/css" href="cs/bootstrap.css">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style type="text/css">
+	.div1{
+		margin-top: 30px;
+		width:75%;
+
+	}
+	.div0{
+		width: 80%;
+		background-color:#E0E0E0
+
+	}
+	h2{
+       text-align: center;
+       color: red;
+	}
+
+
+</style>
+</head>
+<body>
+	<div>
+  <h2> ANGULAR JS</h2>
+		<div class=" container div0">
+
+		<div class="mydiv1">
+	     <label> userName</label>
+	     <input type="text" placeholder="username" class="form-control" data-ng-model="input1">
+		</div>
+		<div class="mydiv2">
+	     <label>Email id </label>
+	     <input type="text" placeholder="Email id" class="form-control"data-ng-model="input2">
+		</div>
+		<div class="mydiv3">
+	     <label>Street</label>
+	     <input type="text" placeholder="Street" class="form-control"data-ng-model="input3">
+		</div>
+		<div class="mydiv4">
+	     <label>city</label>
+	     <input type="text" placeholder="city" class="form-control" data-ng-model="input4">
+		</div>
+		<div class="mydiv5">
+	     <label>State</label>
+	     <input type="text" placeholder="State" class="form-control"data-ng-model="input5">
+		</div>
+		<div class="mydiv6">
+	     <label>Country</label>
+	     <input type="text" placeholder="country" class="form-control"data-ng-model="input6">
+		</div>
+		<div class="mydiv7">
+	     <label>zipcode</label>
+	     <input type="text" placeholder="zipcode" class="form-control"data-ng-model="input7">
+		</div>
+		<div class="mydiv8">
+	     <label>cell no</label>
+	     <input type="text" placeholder="cellno" class="form-control"data-ng-model="input8">
+		</div>
+		<div class="mydiv9">
+	     <label>cell no2</label>
+	     <input type="text" placeholder="cellno" class="form-control" data-ng-model="input9">
+		</div>
+		<div class="mydiv10">
+	     <label>cellno3</label>
+	     <input type="text" placeholder="cellno" class="form-control" data-ng-model="input10">
+		</div>
+	</div>
+
+
+	</form>
+	</div>
+
+	<div class=" container div1">
+	<table class=" table table-bordered">
+		<thead>
+			<tr>
+				<th>username</th>
+				<th>Email id</th>
+				<th>street</th>
+				<th>city</th>
+				<th>State</th>
+				<th>country</th>
+				<th>zipcode</th>
+				<th>cell no</th>t
+				<th>cell no2</th>
+				<th>cell no3</th>
+				</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>{{input1}}</td>
+			<td>{{input2}}</td>
+			<td>{{input3}}</td>
+			<td>{{input4}}</td>
+			<td>{{input5}}</td>
+			<td>{{input6}}</td>
+			<td>{{input7}}</td>
+			<td>{{input8}}</td>
+			<td>{{input9}}</td>
+			<td>{{input10}}</td>
+
+			
+<!--		<tr>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+		</tr>
+		<tr>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+		</tr>
+		<tr>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+		</tr><tr>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+			<td>data1</td>
+		</tr>-->
+
+	</table>
+</div>
+<script type="text/javascript" src="js/angular.js"></script>
+</body>
