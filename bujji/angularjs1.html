@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body class="container mydiv1">
+ <div class="form-group">
+  <label>Username:</label>
+  <input type="text" plceholder="Username" class="form-control my-usename">
+ </div>
+ <div>
+  Display:
+  <p id="displayname"></p>
+ </div>
+ 
+ <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+ <script type="text/javascript">
+  $(function(){
+    $('.my-usename').keyup(function(){
+      var uname = $('.my-usename').val();
+      $('#displayname').html(uname);
+    })
+  })
+ </script>
+</body>
+</html>
