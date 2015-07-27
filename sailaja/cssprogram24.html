@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cssprogram24</title>
+  <style type="text/css">
+  .mydiv{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation:myfrist 15s;/*chrome,safari,Opera*/
+    -moz-animation:myfrist 15s;/*mozilla*/
+    -ms-animation:myfrist 15s;/*ie*/
+     animation:myfrist 15s;
+    }
+    /*chrome,safari,Opera*/
+    @-webkit-keyframes myfrist{
+      0%{background: green; left:0px; top:0px;}
+      100%{background: yellow; left:300px; top: 300px;}
+     
+      
+    }
+    /* standard syntax*/
+    @keyframes myfrist {
+      0%{background: green; left:0px; top:0px;}
+      100%{background: yellow; left:300px; top: 300px;}
+   
+    }
+
+  </style>
+</head>
+<body>
+<p><b>Note:</b> This example does not work in internet explorer9 and earlier version</p>
+   <div class="mydiv">Animation</div>
+</body>
+</html>
