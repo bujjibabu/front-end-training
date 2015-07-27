@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cssprogram21</title>
+  <style type="text/css">
+  .mydiv{
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-animation:myfrist 15s;/*chrome,safari,Opera*/
+    -moz-animation:myfrist 15s;/*mozilla*/
+    -ms-animation:myfrist 15s;/*ie*/
+     animation:myfrist 15s;
+    }
+    /*chrome,safari,Opera*/
+    @-webkit-keyframes myfrist{
+      from{background: green;}
+      to{background: yellow;}
+    }
+    /* standard syntax*/
+    @keyframes myfrist {
+      from{background:green;}
+      to{background: yellow;}
+    }
+
+  </style>
+</head>
+<body>
+<p><b>Note:</b> This example does not work in internet explorer9 and earlier version</p>
+   <div class="mydiv">Animation</div>
+</body>
+</html>
