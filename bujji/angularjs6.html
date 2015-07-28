@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+    <title>Angularjs</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body class="container" data-ng-controller="mainCtrl">
+  <div class="col-xs-12">
+    Name: {{myname}}
+  </div>
+  <div class="col-xs-12">
+    <p>Sum : {{sum}}</p>
+  </div>
+ <script type="text/javascript" src="js/angular.js"></script>
+ <script type="text/javascript">
+      var myApplication = angular.module('myApp',[]);
+      myApplication.controller('mainCtrl',function($scope){
+       // alert('mainCtrl');
+        $scope.myname  = 'Bujjibabu';
+        $scope.number1 = 15;
+        $scope.number2 = 10;
+        $scope.sum = $scope.number1+$scope.number2;
+// stuff fu
+      })
+ </script>
+</body>
+</html>

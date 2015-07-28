@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <title>Angularjs</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body class="container" >
+ <div class="form-group" ng-init="username='Bujjibabu Balaga';myObj={name:'Bujjibabu',mobile:9533068603,address:'Hyd',zip:532459};">
+  <label>Username:</label>
+  <input type="text" class="form-control" placeholder="USERNAME" ng-model="username">
+ </div>
+ <div>
+  <h3>User Details:</h3>
+  <div class="col-xs-4">
+    Name: <span data-ng-bind="myObj.name"></span><br/>
+    Mobile: <span data-ng-bind="myObj.mobile"></span><br/>
+    Address: <span data-ng-bind="myObj.address"></span><br/>
+    Zip: <span data-ng-bind="myObj.zip"></span>
+  </div>
+ </div>
+ <script type="text/javascript" src="js/angular.js"></script>
+</body>
+</html>

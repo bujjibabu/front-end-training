@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <title>Angularjs</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body class="container" ng-init="myArray=[{name:'Bujjibabu',mobile:9533068603,address:'Hyd',zip:532459},{name:'Srinivas',mobile:9533068703,address:'Vizag',zip:4523158},{name:'Teja',mobile:475869523,address:'U.S',zip:42589},{name:'Sailaja',mobile:9533068653,address:'U.K',zip:5322359},{name:'Raja',mobile:9533345068603,address:'Hyd',zip:532459},{name:'Ram',mobile:9533068603,address:'Qcity',zip:532459},{name:'Praveen',mobile:9533068603,address:'OH',zip:53123452}];">
+ <div class="text-center">
+  <h3>User Details:</h3>
+  <div class="col-xs-12">
+    <table class="table table-bordered table-hover table-stripped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Mobile</th>
+          <th>Address</th>
+          <th>Zip</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-ng-repeat="myObj in myArray">
+          <td><span data-ng-bind="myObj.name"></span></td>
+          <td><span data-ng-bind="myObj.mobile"></span></td>
+          <td><span data-ng-bind="myObj.address"></span></td>
+          <td><span data-ng-bind="myObj.zip"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ </div>
+ <script type="text/javascript" src="js/angular.js"></script>
+</body>
+</html>
