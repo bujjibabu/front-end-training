@@ -3,6 +3,11 @@
 <head>
     <title>Angularjs</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+      table thead tr th{
+        cursor: pointer;
+      }
+    </style>
 </head>
 <body class="container" >
  <div class="text-center">
@@ -12,17 +17,17 @@
       <label>Search :</label>
       <input class="form-control" placeholder="Search" ng-model="search">
     </div>
-    <table class="table table-bordered table-hover table-stripped" >
+    <table class="table table-bordered table-hover table-stripped" data-ng-init="predect='name';reverse=false;">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Mobile</th>
-          <th>Address</th>
-          <th>Zip</th>
+          <th data-ng-click="predect='name';reverse=!reverse;" class="text-center">Name <i ng-show="predect=='name'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"></i></th>
+          <th data-ng-click="predect='mobile';reverse=!reverse;" class="text-center">Mobile <i ng-show="predect=='mobile'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"></i></th>
+          <th data-ng-click="predect='address';reverse=!reverse;" class="text-center">Address <i ng-show="predect=='address'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"></i></th>
+          <th data-ng-click="predect='zip';reverse=!reverse;" class="text-center">Zip <i ng-show="predect=='zip'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"></i></th>
         </tr>
       </thead>
       <tbody>
-        <tr data-ng-repeat="myObj in myArray | filter:search | orderBy:'address'">
+        <tr data-ng-repeat="myObj in myArray | filter:search | orderBy:predect:reverse">
           <td><span data-ng-bind="myObj.name"></span></td>
           <td><span data-ng-bind="myObj.mobile"></span></td>
           <td><span data-ng-bind="myObj.address"></span></td>
@@ -44,7 +49,7 @@
         {name:'Raja',mobile:9533345068603,address:'Hyd',zip:532459},
         {name:'Ram',mobile:9533068603,address:'Qcity',zip:532459},
         {name:'Praveen',mobile:9533068603,address:'OH',zip:53123452}];
-        $scope.total = 123;
+        //$scope.total = 123;
       })
  </script>
 </body>
