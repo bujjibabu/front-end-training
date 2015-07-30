@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    </head>
+    <body data-ng-app="">
+        <div>
+            <label>Enter A value:</label>
+            <input type="number" class="numbera" data-ng-model="numa">
+        </div><br>
+        <div>
+            <label>Enter B value:</label>
+            <input type="number" class="numberb" data-ng-model="numb">
+        </div>
+        <p> Addition of Two Numbers is :{{numa+numb}}</p>
+        <p>Subtraction of Two numbers  is :{{numa-numb}}</p>
+        <p>Division of two Numbers is :{{numa/numb}}</p>
+        <p>Multiplication of two numbers is  :{{numa*numb}}</p>
+        <p>Getting values by using ng-bind</p>
+        <p data-ng-bind="numa+numb"></p>
+<!--        <button type="button" class="buttoncls">Click </button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){                
+                $(".buttoncls").click(function(){
+                    var x=$(".numbera").val();
+                    debugger;
+                    console.log(x);
+                    var y=$(".numberb").val();
+                console.log(y);
+//                var add=x+y;
+//                console.log(add);              
+                console.log(x+y);
+                
+                });
+                
+            });
+        </script>-->
+        
+    </body>
+</html>

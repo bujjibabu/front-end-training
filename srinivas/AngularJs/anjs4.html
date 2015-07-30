@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">       
+    </head>
+    
+    <body class='container'  data-ng-init='myObject=[{firstname:"srinivas",lastname:"rajala",zip:1987},
+                                                     {firstname:"sriiramy",lastname:"reddyy",zip:87698}];'>              
+                      
+                      
+                      <!--[{firstname:'sriram',lastname:'palla',state:'new york',zip:2344},-->
+                             <!--{firstname:'venkar',lastname:'redd',state:'new york',zip:2344}];">-->
+                             <!--
+        <div  data-ng-init="obj=[{firstname='srinivas',lastname:'rajala',state:'new york',zip:2344},
+                                {firstname='sriram',lastname:'palla',state:'new york',zip:2344},
+                                {firstname='venkar',lastname:'redd',state:'new york',zip:2344}];">
+-->            <div class="text-center">
+            <table class="table table-bordered table-stripped">
+                <thead>
+                    <tr class="success">
+                        <th>First NAME</th>
+                        <th>Last Name</th>
+                        <th>State</th>
+                        <th>Zip</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr data-ng-repeat="newobj in myObject">             
+                      <td><span data-ng-bind="newobj.firstname"></span></td>
+                      <td><span data-ng-bind="newobj.lastname"></span></td>
+                       <td><span data-ng-bind="newobj.state"></span></td>
+                       <td><span data-ng-bind="newobj.zip"></span></td>
+                  </tr>
+                </tbody>            
+            </table>
+        </div>          
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        
+        
+   </body>
+</html>
