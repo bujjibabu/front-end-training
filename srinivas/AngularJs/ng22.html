@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-ng-app="application1">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body class="container" data-ng-controller="maincontroller1">
+
+  <!-- <p>Name is :{{name}}</p> -->
+
+  		<h1 class="text-center">user details</h1>
+  	<div class="form-group text-left">
+      <label>Search :</label>
+      <input class="form-control" placeholder="Search" ng-model="search">
+    </div>
+
+	<div class="text-center container" id="cssss">
+		<table class="table table-bordered table-stripperd">
+			<thead>
+			<tr>
+				<th class="text-center">FirstName</th>
+				<th class="text-center">lastName</th>
+				<th class="text-center">Area</th>
+				<th class="text-center">phonenumber</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr data-ng-repeat="xxxx in table |  filter:search | orderBy:'area'">
+					<td><span data-ng-bind="xxxx.firstname"></span></td>
+					<td><span data-ng-bind="xxxx.lastname"></span></td>
+					<td><span data-ng-bind="xxxx.area"></span></td>
+					<td><span data-ng-bind="xxxx.phonenumer"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script type="text/javascript">
+			var app=angular.module('application1',[]);
+				app.controller('maincontroller1',function($scope){
+			    /* 	$scope.name="srininvas reddy";*/
+			     	$scope.table=[
+		{firstname:'Srinivas Reddy',lastname:'pallala',area:'katragunta',phonenumer:09876},
+		{firstname:'Rami',lastname:'rajala',area:'katragunta',phonenumer:09876},
+		{firstname:'Venat Reddy',lastname:'dugg',area:'katragunta',phonenumer:09876},
+		{firstname:'Raja' ,lastname:'maram',area:'katragunta',phonenumer:09876}];	
+				});
+				
+	</script>
+</body>
+</html>
