@@ -1,0 +1,120 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import 'compass';
+/*------- With a standalone mixin ---*/
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+ 
+  @else if $breakpoint == "medium" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+ 
+  @else if $breakpoint == "large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+/* my variables for common colors */
+$header-background:#c0c0c0;
+
+
+/*------------ sections with break points ------------*/
+html{
+  min-height: 100%;
+  position: relative;
+}
+body{
+  min-height:100%;
+  margin-bottom:60px;
+}
+.my-header{
+  background: $header-background;
+  padding:10px 15px;
+  h3{
+    color:#fff !important;
+  }
+}
+.my-footer{
+  color:#fff;
+  background: $header-background;
+  padding-left:15px;
+  bottom: 0px;
+  height:40px;
+  clear: both;
+  width: 100%;
+  position: absolute;
+}
+.gradient1{
+  background-image: -svg(linear-gradient(45deg, #2ac363, #cd8c14, #9c4cc2));
+}
+.gradient2{
+   background-image: -svg(linear-gradient(90deg, #3ae363, #de4c14, #9c4cc2));
+}
+.gradient3{
+   background-image: -svg(linear-gradient(180deg, #2ac363, #cd8c14, #9c4cc2));
+}
+.gradient1a{
+  background-image: -svg(linear-gradient(90deg, #4ac311, #bb8c14, #3c4cc2));
+}
+.gradient2a{
+  background-image: -svg(linear-gradient(120deg, #4acc63, #238c14, #999cc2));
+}
+.gradient3a{
+  background-image: -svg(linear-gradient(160deg, red, blue, green));
+}
+.section1{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  float:left;
+  padding-bottom: 30px;
+  img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
+  @include breakpoint(small) { width:100%;}
+  @include breakpoint(medium) { width:100%;}
+  @include breakpoint(large) { width:33.33333333%;}
+}
+.section2{
+  width: 100%;
+  float:left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  @include breakpoint(small) { width:100%;}
+  @include breakpoint(medium) { width:100%;}
+  @include breakpoint(large) { width:33.33333333%;}
+}
+.section3{
+  width: 100%;
+  float:left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  @include breakpoint(small) { width:100%;}
+  @include breakpoint(medium) { width:100%;}
+  @include breakpoint(large) { width:33.33333333%;}
+}
+.btn-section{
+  padding-top: 30px;
+  text-align: center;
+  clear: both;
+}
+.my-btn{
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  padding:5px 15px;
+  border-radius: 10px;
+}
