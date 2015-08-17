@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More abour Angular Java Script</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.css-delete{
+  		color: red;
+  	}
+  </style>
+  
+</head>
+<body class="container" data-ng-app="appl1" data-ng-controller="ctrl1">
+     <h1 class="text-center">Sample Form</h1>
+     <div class="col-xs-offset-3 col-xs-6">
+		      <form>
+		        <div class="form-group">
+		          <label for="exampleInputEmail1">Item Id</label>
+		          <input type="text" class="form-control"  placeholder="ID" data-ng-model="itemid">
+		        </div>
+		        <div class="form-group">
+		          <label for="exampleInputPassword1">Item Name</label>
+		          <input type="text" class="form-control"  placeholder="NAME" data-ng-model="itemname">
+		        </div>
+		        <div class="form-group">
+		          <label for="exampleInputPassword1">Item Desc</label>
+		          <input type="text" class="form-control"  placeholder="DESC" data-ng-model="itemdesc">
+		        </div>
+		        <div class="form-group">
+		          <label for="exampleInputPassword1">Date</label>
+		          <input type="date" class="form-control"  placeholder="Date" data-ng-model="itemdate">
+		        </div>
+		        <button type="submit" class="btn btn-default" data-ng-click="fnItemSubmit()">Submit</button>
+		      </form>
+     </div>
+     <table class="table table-bordered table-stripped" data-ng-show="data.length>0">
+     		<thead>
+     			<tr>
+     				<th>Item ID</th>
+     				<th>Item Name</th>
+     				<th>Item Desc</th>
+     				<th>Item Date</th>
+     				<th>Delete</th>
+     				<th>View</th>
+     			</tr>
+     		</thead>
+     		<tbody>
+     			<tr data-ng-repeat="view in data">
+	     			<td><span data-ng-bind="view.identi"</span></td>
+	     			<td><span data-ng-bind="view.name"</span></td>
+	     			<td><span data-ng-bind="view.Desc"</span></td>
+	     			<td><span data-ng-bind="view.date"</span></td>
+	    <td><i class= "glyphicon glyphicon-trash css-delete" data-ng-click="fnDelete($index)"></i></td>
+              <td><i class="glyphicon glyphicon-eye-open" data-ng-click="fnView(myObj)"></i></td>
+     			</tr>
+     		</tbody>
+
+
+
+     </table>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+     <script>
+       var application1=angular.module("appl1",[]);
+       application1.controller('ctrl1',function($scope){
+       	$scope.data=[];
+       	$scope.fnItemSubmit=function(){
+       		var daterec=new Date($scope.itemdate);
+       		var month=daterec.getMonth()+1;
+       		if(month<9){
+       			month="0"+month;
+       		}
+       	     
+       	     var fulldate=month+'/'+daterec.getDate() +'/'+ daterec.getFullYear();
+       		var obj={identi:$scope.itemid,name:$scope.itemname,Desc:$scope.itemdesc,date:fulldate};
+       		console.log(obj);
+       	    $scope.data.push(obj);
+       	    console.log($scope.data);
+       	    $scope.itemid=''; // Resetting field to  null posrosir 
+       	    $scope.itemname='';
+       	    $scope.itemdesc='';
+       	    $scope.itemdate='';
+       	}
+       	$scope.fnDelete=function(index){
+
+       		$scope.data.splice(index,1);
+       	}
+
+       });
+
+     </script>
+        
+
+</body>
+</html>

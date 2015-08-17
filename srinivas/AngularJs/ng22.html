@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html data-ng-app="application1">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    
+    <style type="text/css">
+    table, thead,tr,th{
+    	cursor: pointer;
+    }
+    </style>
+</head>
+<body class="container" data-ng-controller="maincontroller1">
+
+  <!-- <p>Name is :{{name}}</p> -->
+
+  		<h1 class="text-center">user details</h1>
+  	<div class="form-group text-left">
+      <label>Search :</label>
+      <input class="form-control" placeholder="Search" ng-model="search">
+    </div>
+
+	<div class="text-center container" id="cssss">
+<table class="table table-bordered table-stripperd" data-ng-init="predict='firstname';reverse=false">
+			<thead>
+			<tr>
+				<th class="text-center" data-ng-click="predict='firstname';reverse=!reverse">FirstName<i ng-show="predict=='firstname'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"</i></th>
+				<th class="text-center" data-ng-click="predict='lastname';reverse=!reverse">lastName <i ng-show="predict=='lastname'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"</i></th>
+				<th class="text-center" data-ng-click="predict='area';reverse=!reverse">Area
+				<i ng-show="predict=='area'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"</i></th>
+				<th class="text-center" data-ng-click="predict='phonenumer';reverse=!reverse">phonenumber<i ng-show="predict=='phonenumer'" ng-class="reverse && 'glyphicon glyphicon-chevron-up' || 'glyphicon glyphicon-chevron-down'"</i></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr data-ng-repeat="xxxx in table |  filter:search | orderBy:predict:reverse">
+					<td><span data-ng-bind="xxxx.firstname"></span></td>
+					<td><span data-ng-bind="xxxx.lastname"></span></td>
+					<td><span data-ng-bind="xxxx.area"></span></td>
+					<td><span data-ng-bind="xxxx.phonenumer"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<script src="extjs.js"></script>
+ 
+	
+</body>
+</html>

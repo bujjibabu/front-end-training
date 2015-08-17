@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ng table</title>
+	
+       <script type="text/javascript" src="js/angular.js"></script>
+</head>
+<body data-ng-app=""data-ng-init="name=[
+				{firstname:'Srinivas Reddy',lastname:'Rajala',Area:'Newyork',phonenum:987},
+				{firstname:'Srinivas Reddy',lastname:'Palla',Area:'Newyork',phonenum:987},
+				{firstname:'Srinivas Reddy',lastname:'Rajala',Area:'Newyork',phonenum:987},
+				{firstname:'Srinivas Reddy',lastname:'Rajala',Area:'Newyork',phonenum:987}];">
+<div>
+
+         <table>
+         <thead>
+         <tr>
+         		<th>FirstName</th>
+         		<th>Last Name</th>
+         		<th>Area</th>
+         		<th>Phonenumner</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr data-ng-repeat="uobj in name">
+         		<td><span data-ng-bind=uobj.firstname></span></td>
+         		<td><span data-ng-bind=uobj.lastname></span></td>
+         		<td><span data-ng-bind=uobj.Area></span></td>
+         		<td><span data-ng-bind=uobj.phonenum></span></td>
+         </tr>
+         </tbody>
+         </table>
+ </div>
+
+</body>
+</html>
